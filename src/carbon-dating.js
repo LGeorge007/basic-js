@@ -10,8 +10,8 @@ module.exports = function dateSample(sampleActivity) {
   } else {
     if (sampleActivity > 0 && sampleActivity < 15) {
       let ratio = MODERN_ACTIVITY / parseFloat(sampleActivity);
-      k = Math.LN2 / HALF_LIFE_PERIOD;
-      t = Math.log(ratio) / k;
+      let k = Math.LN2 / HALF_LIFE_PERIOD;
+          t = Math.log(ratio) / k;
     } else {
       return false;
     };
